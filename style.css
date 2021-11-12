@@ -4,7 +4,7 @@
 }
 body{
     font-family: sans-serif;
-    background: #333;
+    background: #222831;
 }
 /*-------------------------------navbar---------------------------------------*/
 .navbar-nav li a{
@@ -13,21 +13,21 @@ body{
     margin: 15px;
 }
 .navbar-nav li a:hover{
-    background: #e67e22;
+    background: #393e46;
     border-radius: 10px;
 }
 /*-------------------------------banner---------------------------------------*/
-.shape{
-    width: 400px;
-}
 .boy{
     width: 350px;
     position: absolute;
     right: 120px;
     top: -15px;
 }
-.images img{
+.images img,svg{
     transition: 1s ease;
+}
+.shape{
+    width: 500px;
 }
 .images:hover .shape{
     transform: translateY(-30px);
@@ -53,7 +53,7 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
-    background: #333;
+    background: #222831;
     border-left: 2px solid #fc6d6d;
     animation: typing 1.5s steps(10) infinite;
     
@@ -97,28 +97,24 @@ color: #1abc9c;
 font-size: 35px;
 }
 .main-know{
-border: 1px solid rgb(121, 113, 113);
-}
-.fa-html5{
-    font-size: 100px;
-    color: #e34c26;
-}
-.fa-css3-alt{
-    font-size: 100px;
-    color: #264de4;
-}
-.fa-bootstrap{
-    font-size: 100px;
-    color: #563d7c;
+border-top: 15px solid #393e46;
 }
 .code{
-    border: 3px solid #333;
-    background: rgb(66, 65, 65);
+    width: 150px;
+    background: #eeeeee;
+    border-radius: 10%;
+    margin-left: 25%;
 }
-.code img{
+.code span{
+    color: #222831;
+    font-weight: 600;
+}
+.code i{
     transition: 0.3s ease;
+    color: #fd7014;
+    font-size: 100px;
 }
-.code img:hover{
+.code i:hover{
     transform: translateY(-15%);
 }
 .title1::before
@@ -132,6 +128,17 @@ border: 1px solid rgb(121, 113, 113);
     display: block;
     transform: translateY(63px);
 }
+.title1::after
+{
+    content: '';
+    background: #7b1798;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(1px);
+}
 .title2::before
 {
     content: '';
@@ -142,6 +149,17 @@ border: 1px solid rgb(121, 113, 113);
     margin-right: auto;
     display: block;
     transform: translateY(63px);
+}
+.title2::after
+{
+    content: '';
+    background: #3498db;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(1px);
 }
 /*-------------------------------responsive---------------------------------------*/
 @media (max-width: 400px){
@@ -156,5 +174,8 @@ border: 1px solid rgb(121, 113, 113);
         font-weight: 400;
         overflow: hidden;
         position: relative;
+    }
+    .code{
+        margin-bottom: 20px;
     }
 }
