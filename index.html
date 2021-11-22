@@ -16,7 +16,7 @@
   <section id="navBar">
   <header>
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar">
         <a class="navbar-brand" href="#">Hinas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,6 +35,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#">HireMe</a>
             </li>
+            <li class="nav-item">
+              <div class="toggle"></div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -50,8 +53,8 @@
         <div class="wrapper">
           <div class="static-txt">I'm Ahammed <span>Hinas</span></div>
       </div>
-            <p>This is my official portfolio website to showes all
-                <br> Details and work experience web development
+            <p>This is my official portfolio webssite to showes all
+                <br> Details and work experience web developmeent
             </p>
             <a href="#">DOWNLOAD CV</a>
       </div>
@@ -80,7 +83,7 @@
     </div>
     <div class="col-md-4 text-center">
       <div class="code">
-        <i class="fab fa-css3-alt"></i><br>
+        <i class="fab fa-css3-alt"></i></i><br>
      <span class="css">CSS</span>  
     </div>
     </div>
@@ -133,5 +136,13 @@
       duration: 2000,
     });
   </script>
+
+<script>
+  const sec = document.querySelector('body');
+  const toggle = document.querySelector('.toggle');
+  toggle.onclick = function(){
+  sec.classList.toggle('dark')
+}
+</script>
 </body>
 </html>
