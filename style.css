@@ -52,7 +52,8 @@ body.dark .navbar-nav li a{
 }
 body.dark .toggle::before{
     content: '\f185';
-    color:#fff;
+    color: lightblue;
+    background: #fff;
 }
 /*-------------------------------banner---------------------------------------*/
 .boy{
